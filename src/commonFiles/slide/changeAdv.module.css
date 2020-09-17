@@ -1,0 +1,11 @@
+.slideCont{
+    position: relative;
+    margin: 20px 5px;
+   /* border: 2px solid black; */
+   height: 154px;
+}
+.slideCont img{
+    width: 290px;
+    height: 150px;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.35);
+}

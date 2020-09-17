@@ -10,8 +10,8 @@ const CartItem = ({ product, removeProduct, addedToCart }) => (
                 <span>{product.price}$</span>
                 <span>({addedToCart})</span>
             </List.Content>
-            <List.Content >
-                <Button onClick={removeProduct.bind(this, product.id)} color='red'>-</Button>
+            <List.Content id='removeCart'>
+                <Button onClick={removeProduct.bind(this, product.id)} color='red' size='mini'>x</Button>
             </List.Content>
         </List.Item>
     </List>

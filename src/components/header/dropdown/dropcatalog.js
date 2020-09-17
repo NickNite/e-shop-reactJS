@@ -2,7 +2,7 @@ import React from 'react'
 import { Dropdown } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
-const DropdownExamplePointing = () => (
+const CatalogMenu = () => (
     <Dropdown text='Catalog' className='item'>
         <Dropdown.Menu>
             <div className='productChange'>
@@ -13,4 +13,4 @@ const DropdownExamplePointing = () => (
     </Dropdown>
 );
 
-export default DropdownExamplePointing;
+export default CatalogMenu;

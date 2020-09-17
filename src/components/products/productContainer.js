@@ -6,6 +6,7 @@ import { getProduct } from '../../reducers/productReducer';
 import { sortBy } from '../../commonFiles/sortBy';
 import { useLocation } from 'react-router';
 import MenuFilter from '../navbar/navbarContainer';
+import { ChangeAdvertising } from '../../commonFiles/slide/changeAdvertising';
 
 
 
@@ -20,8 +21,13 @@ const ProductContainer = (props) => {
                 ? <LoaderExampleText />
                 : <div className='main'>
                     <div className='navbar'>
-                        <h3>Sort</h3>
-                        <MenuFilter />
+                        <div className='productSort'>
+                            <h3>Sort</h3>
+                            <MenuFilter />
+                        </div>
+                        <div className='slider'>
+                            <ChangeAdvertising />
+                        </div>
                     </div>
                     <div className='productMain'>{props.productTest.length === 0
                         ? <div>No Results</div>
