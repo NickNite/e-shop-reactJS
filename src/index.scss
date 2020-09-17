@@ -55,8 +55,8 @@ a{
  background-color: #edeef0;
  display: flex;
  justify-content: center;
- padding: 10px;
  min-height: 100%;
+ padding-top: 10px;
 }
 
 .productChange{
@@ -94,5 +94,25 @@ margin: 0px 20px 0px 20px ;
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 860px){
+  .fullPrice {
+    display: none !important;
+  }
+  .navbar{
+    display: none;
+  }
+  .head{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .container{
+    width: 100%;
+  }
+  .productMain{
+justify-content: center;
   }
 }

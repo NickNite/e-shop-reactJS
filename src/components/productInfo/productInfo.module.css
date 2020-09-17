@@ -30,3 +30,12 @@
 .title strong{
     margin-left: 10px;
 }
+@media (max-width: 420px){
+    .title, .title h3{
+        font-size: 14px;
+        letter-spacing: -0.5px;
+    }
+    .title h3{
+        width: 120px;
+    }
+  }

@@ -6,12 +6,14 @@ import styles from './productInfo.module.css'
 const ProductInfo = ({ product, addProduct }) => {
     return (
         <div className={styles.main}>
-            <div className={styles.title}>
+            <div className={styles.title + " " + "titleProduct"}>
                 <div>
-                    <h3>Dining table&ensp;"{product.title}"</h3>
+                    <h3>{product.type === 'table'
+                        ? 'Dining table'
+                        : 'Chair'}&ensp;"{product.title}"</h3>
                 </div>
                 <div>
-                    <Button onClick={addProduct.bind(this, product)} size='tiny' positive>Add to cart</Button>
+                    <Button onClick={addProduct.bind(this, product)} size='mini' positive>Add to cart</Button>
                     <strong>Price:&ensp; {product.price}$</strong>
                 </div>
 
