@@ -1,0 +1,42 @@
+.featured {
+    position: relative;
+    margin: 20px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding-bottom: 10px;
+    text-align: center; 
+}
+.featured  h3{
+      margin-bottom: 30px;
+    }
+.featured  img{
+  height: 150px;
+      width: 250px;
+      border: 3px solid rgb(255, 255, 255);
+      box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.35);
+    }
+.featured  img:hover{
+      border: 3px solid rgb(175, 174, 255);
+      cursor: pointer;
+    }
+.featured  h5{
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(63, 63, 196);
+      letter-spacing: 1px;
+      margin: 10px 0px;
+    }
+.featured  h5:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+.featured  p{
+      font-weight: 900;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+.featured  span{
+        color: rgb(179, 28, 28);
+      }
+  .promoContainer h3{
+    width: 90%;
+    margin: 20px auto;
+  }

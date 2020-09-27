@@ -7,6 +7,7 @@ import { sortBy } from '../../commonFiles/sortBy';
 import { useLocation } from 'react-router';
 import MenuFilter from '../navbar/navbarContainer';
 import { ChangeAdvertising } from '../../commonFiles/slide/changeAdvertising';
+import PromoContainer from '../../commonFiles/promo/promoContainer';
 
 
 
@@ -14,7 +15,6 @@ const ProductContainer = (props) => {
     useEffect(() => {
         props.getProduct()
     }, [useLocation()])
-
     return (
         <div>
             {props.loading
@@ -25,13 +25,14 @@ const ProductContainer = (props) => {
                             <h3>Sort</h3>
                             <MenuFilter />
                         </div>
-                        <div className='slider'>
+                        <div className='advertising'>
                             <ChangeAdvertising />
+                            <PromoContainer />
                         </div>
                     </div>
-                    <div className='productMain'>{props.productTest.length === 0
+                    <div className='productMain'>{props.product.length === 0
                         ? <div>No Results</div>
-                        : props.productTest.map((item, index) =>
+                        : props.product.map((item, index) =>
                             <Product key={index} product={item} />)
                     }
                     </div>
@@ -41,7 +42,7 @@ const ProductContainer = (props) => {
 };
 const mapStateToProps = ({ product, sort }) => {
     return {
-        productTest: sortBy(product.products, sort.sortBy, sort.searchText),
+        product: sortBy(product.products, sort.sortBy, sort.searchText),
         loading: product.loading
     }
 };

@@ -27,8 +27,8 @@ export const productReducer = (state = initialState, action) => {
     }
 };
 
-export const showProduct = (payload) => ({ type: SHOW_PRODUCT, payload });
-export const showLoadnig = () => ({ type: SHOW_LOADING });
+const showProduct = (payload) => ({ type: SHOW_PRODUCT, payload });
+const showLoadnig = () => ({ type: SHOW_LOADING });
 
 
 

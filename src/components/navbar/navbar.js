@@ -4,7 +4,7 @@ import { Menu, Input } from 'semantic-ui-react'
 
 const MenuFilter = ({ sortProduct, setSort, searchText, setSearchText }) => {
     return (
-        <Menu pointing vertical>
+        <Menu pointing vertical className='sortMenu'>
             <Menu.Item
                 active={sortProduct === 'all'}
                 onClick={setSort.bind(this, 'all')}
@@ -21,7 +21,9 @@ const MenuFilter = ({ sortProduct, setSort, searchText, setSearchText }) => {
                 active={sortProduct === 'manufacturer'}
                 onClick={setSort.bind(this, 'manufacturer')}
             >Manufacturer</Menu.Item>
-            <Menu.Item><Input icon='search' placeholder='search' value={searchText} onChange={e => setSearchText(e.target.value)} /></Menu.Item>
+            <Menu.Item>
+                <Input icon='search' placeholder='search' value={searchText} onChange={e => setSearchText(e.target.value)} />
+            </Menu.Item>
 
         </Menu>
     )

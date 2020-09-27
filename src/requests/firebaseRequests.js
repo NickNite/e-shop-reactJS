@@ -10,5 +10,9 @@ export const productApi = {
     getChairs() {
         return axios.get(`${baseURL}/chairs.json`)
             .then(response => response.data)
+    },
+    getPromoItems() {
+        return axios.get(`${baseURL}/promoItems.json`)
+            .then(response => response.data)
     }
 };

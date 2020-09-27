@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './product.module.css';
-import { Card, Button } from 'semantic-ui-react'
+import { Card, Icon } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom';
 
 export const Product = ({ product, addProduct, addedToCart }) => {
@@ -24,7 +24,9 @@ export const Product = ({ product, addProduct, addedToCart }) => {
                 </Card.Content>
                 <Card.Content className={styles.price} >
                     <span>$&ensp;{product.price}</span>
-                    <Button onClick={addProduct.bind(this, product)} positive>Add to cart</Button>
+                    <div className={styles.buttonAdd} onClick={addProduct.bind(this, product)}>
+                        <Icon name='cart arrow down' size='big' color='blue' />
+                    </div>
                     ({addedToCart})
             </Card.Content>
             </Card>

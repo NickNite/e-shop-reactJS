@@ -33,6 +33,10 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 14px !important;
 }
-.product button:focus{
-    background: #21ba45 !important;
+.buttonAdd{
+margin-left: 60px;
+}
+
+.buttonAdd:hover{
+    cursor: pointer;
 }
