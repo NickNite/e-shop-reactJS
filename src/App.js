@@ -5,7 +5,7 @@ import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 import ProductInfo from './components/productInfo/productInfoContainer';
 import ProductContainer from './components/products/productContainer';
 import pay from './image/payPartner.png';
-import logo from './image/logo_192.png';
+import logo from ' ./image/logo_192.png';
 
 function App() {
   return (
