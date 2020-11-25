@@ -27,7 +27,7 @@ a{
 .container{
   display: flex;
   flex-direction: column;
- width: 70%;
+ width: 1335px;
  margin-top: 80px;
 }
 .main{
@@ -54,10 +54,7 @@ margin: 0 auto;
   top: 0px;
   z-index: 50;
 }
-.payPartner img{
-  width: 100%;
-  margin-top: 20px;
-}
+
 .content{
   margin-top: 20px;
    background-color: rgba(237,238,240, 0.9);
@@ -100,8 +97,8 @@ margin: 0 auto;
 .productMain{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: flex-start;
+    margin: 20px 5px;
 }
 .cart{
 display: flex !important;
@@ -145,7 +142,8 @@ margin: 0px 20px 0px 20px ;
     letter-spacing: 0.5px;
   }
   img{
-  width: 40px;
+  width: 100px;
+ 
 }
 
 }

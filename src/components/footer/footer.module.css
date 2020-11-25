@@ -1,0 +1,152 @@
+.payPartner img{
+    width: 100%;
+margin-bottom: -4px;
+  }
+  .payPartner{
+          margin-top: 20px;
+  }
+  .shopInfo{
+      height: 350px;
+      background: rgba(0, 0, 0, 0.63);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .map{
+      border: 3px solid rgb(224, 224, 224);
+  }
+  .contact{
+      color: white;
+      width: 60%;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;    
+  }
+  .icon{
+      margin-right: 10px !important ;
+  }
+.contact li{
+    list-style-type: none;
+    margin: 10px 0 ;
+    font-size: 16px;
+    padding-bottom: 5px;
+    text-align: start;
+    color: rgb(224, 224, 224);
+}
+.contact ul{
+    text-align: start;
+    padding-left: 0px;
+}
+.contact h3{
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    color:  rgb(255, 255, 255) ;
+    max-width: 250px;
+}
+.footer{
+background: rgb(243, 243, 243);
+margin-bottom: 30px;
+display: flex;
+align-items: flex-start;
+justify-content: space-evenly;
+}
+.userInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.userInfo ul, .promo ul{
+    margin-top: 0px;
+}
+.userInfo li, .promo li{
+padding: 3px 20px 0px 0px;
+text-align: left;
+}
+.promo li{
+    list-style: none;
+}
+.promo li a{
+    color: rgb(134, 51, 51);
+}
+.userInfo li a:hover,  .promo li a:hover{
+text-decoration: underline;
+color: rgb(190, 3, 3);
+cursor: pointer;
+}
+#userInfo, #promo, #companyInfo, #assessment{
+    text-align: center;
+    padding: 0 20px;
+}
+#userInfo h4, #promo h4,#companyInfo h4, #assessment h4{
+    margin: 15px 0;
+}
+.promo h4{
+    border: 1px solid #f116;
+}
+.assessment img{
+    width: 30px;
+}
+.assessment li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.assessment ul{
+    padding-left: 0px;
+    padding-right: 20px;
+    width: 250px; 
+}
+
+.yahoo{
+    width: 120px;
+    margin-right: 15px;
+    background: orange;
+    height: 30px;
+}
+.google{
+    width: 136px;
+    background: orange;
+    height: 30px;
+}
+.assessmentImg{
+    margin-top: 10px;
+}
+.number{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(216, 140, 0);
+}
+.arrow{
+    width: 150px !important;
+}
+.links img{
+    width: 40px;
+    height: 40px;
+}
+.links img:hover{
+    opacity: 0.8;
+}
+.links a{
+    margin: 5px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.socialNetw{
+margin-top: 15px;
+}
+.companyInfo{
+    text-align: start;
+    margin-top: 30px;
+}
+.companyInfo ul{
+    padding-left: 0;
+}
+.companyInfo li{
+    list-style-type: none;
+    margin: 5px;
+}
