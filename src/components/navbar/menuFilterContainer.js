@@ -1,11 +1,11 @@
 import { connect } from "react-redux";
 import { setSort, setSearchText } from "../../reducers/sortReducer";
-import MenuFilter from "./navbar";
+import MenuFilter from "./menuFilter";
 
 const mapStateToProps = ({ sort }) => {
     return {
         sortProduct: sort.sortBy,
-        searchText: sort.searchText
+        searchText: sort.searchText,
     }
 };
 const mapDispatchToProps = (dispatch) => {

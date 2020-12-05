@@ -36,7 +36,7 @@ a{
   flex-direction: row;
 }
 .navbar{
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
   border-right: 1px solid #c0bfbf ;
   display: block;
   margin: 30px 0;
@@ -49,17 +49,14 @@ margin: 0 auto;
 .sortMenu{
   width: 100% !important;
 }
-.head{
-  position: sticky;
-  top: 0px;
-  z-index: 50;
-}
 
-.content{
+
+.mainContent{
   margin-top: 20px;
    background-color: rgba(237,238,240, 0.9);
    box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.59);
    border-radius: 3px;
+   display: flex;
 }
 .productSort h3, .advertising h3{
   text-align: center;
@@ -68,7 +65,7 @@ margin: 0 auto;
   border-radius: 3px;
   letter-spacing: 1px;
   font-family: 'Fjalla One', sans-serif;
-  background: radial-gradient(circle, rgba(255,0,0,0.21332282913165268) 0%, rgba(0,63,126,0.196516106442577) 100%);
+  background-color: #ffb412a8;
 }
 
 
@@ -100,12 +97,7 @@ margin: 0 auto;
     justify-content: flex-start;
     margin: 20px 5px;
 }
-.cart{
-display: flex !important;
-align-items: center;
-justify-content: center;
-margin: 0px 20px 0px 20px ;
-}
+
 .cartMenu{
   border-left: 1px solid #e8e9e9 ;
 }
@@ -119,34 +111,7 @@ margin: 0px 20px 0px 20px ;
     padding-top: 20px;
   }
 }
-.headMid{
-  width: 80%;
- display: flex;
- justify-content: center;
-}
-.logo {
-  display: flex;
-  padding: 0px;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
- width: 100%;
- background: linear-gradient(0deg, rgba(195,190,190,1) 0%, rgba(240,195,195,0) 100%);
-  h2{
-    font-size: 18px;
-    margin: 0px 0px 0px 5px;
-    font-family: 'Acme', sans-serif;
-    letter-spacing: 0.5px;
-  }
-  img{
-  width: 100px;
- 
-}
 
-}
 .sortImg{
   display: none;
   img{

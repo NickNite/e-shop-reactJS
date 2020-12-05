@@ -25,7 +25,7 @@ export const Product = ({ product, addProduct, addedToCart }) => {
                 <Card.Content className={styles.price} >
                     <span>$&ensp;{product.price}</span>
                     <div className={styles.buttonAdd} onClick={addProduct.bind(this, product)}>
-                        <Icon name='cart arrow down' size='big' color='blue' />
+                        <Icon name='cart arrow down' size='big' color="teal" />
                     </div>
                     ({addedToCart})
             </Card.Content>

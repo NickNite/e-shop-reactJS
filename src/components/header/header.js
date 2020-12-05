@@ -1,28 +1,30 @@
 import React from 'react';
-import { Menu, Popup, Dropdown, Button } from 'semantic-ui-react'
-import CatalogMenu from './dropdown/dropcatalog';
+import { Popup, Button, Icon } from 'semantic-ui-react'
 import CartItem from '../cart/cartItemContainer';
-
-import logoSort from '../../image/sort_menu.png';
+import logo from '../../image/minimalist2.png';
+import styles from './header.module.css';
+import basketImg from '../../image/images.png'
 
 export const Header = ({ total, count, items, removeProduct }) => {
+
+    const cart = (
+        <div className={styles.cartImg}>
+            <img src={basketImg} />
+            <span>{count}</span>
+        </div>
+    )
     return (
-        <Menu >
-            <CatalogMenu />
-            <div className='headMid'>
-                <div className='sortImg'>
-                    <img src={logoSort} />
-                </div>
-                {/* <div className='logo'>
-                    <img src={logo} />
-                    <h2>IKEA for the little ones</h2>
-                </div> */}
+        <div className={styles.header}>
+            <div className={styles.logo}>
+                <img src={logo} />
+                <h2>Сomfortable Kitchen</h2>
             </div>
-            <Menu.Menu position='right' className='cartMenu'>
+            <div className={styles.cart}>
                 <Popup
                     wide='very'
                     on='click'
-                    trigger={<Dropdown icon='cart' text={`Cart (${count})`} className='cart' />}
+                    position='top center'
+                    trigger={cart}
                     content={<div>{items.map((item, index) => <CartItem key={index} product={item} removeProduct={removeProduct} />)}
                         {items.length === 0
                             ? <strong>No produtcs</strong>
@@ -32,8 +34,8 @@ export const Header = ({ total, count, items, removeProduct }) => {
                             </div>}
                     </div>}
                 />
-            </Menu.Menu>
-
-        </Menu>
+            </div>
+        </div>
     )
 }
+

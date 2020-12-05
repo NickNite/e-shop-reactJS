@@ -1,32 +1,25 @@
-import React from 'react'
-import { Menu, Input } from 'semantic-ui-react'
+import React from 'react';
+import MenuFilter from './menuFilterContainer';
+import { ChangeAdvertising } from '../../commonFiles/slide/changeAdvertising';
+import PromoContainer from '../../commonFiles/promo/promoContainer';
+import CatalogMenu from './dropdown/dropcatalog';
 
-
-const MenuFilter = ({ sortProduct, setSort, searchText, setSearchText }) => {
+const Navbar = () => {
     return (
-        <Menu pointing vertical className='sortMenu'>
-            <Menu.Item
-                active={sortProduct === 'all'}
-                onClick={setSort.bind(this, 'all')}
-            >All</Menu.Item>
-            <Menu.Item
-                active={sortProduct === 'price_cheap'}
-                onClick={setSort.bind(this, 'price_cheap')}
-            >For the price (cheap)</Menu.Item>
-            <Menu.Item
-                active={sortProduct === 'price_expensive'}
-                onClick={setSort.bind(this, 'price_expensive')}
-            >For the price (expensive)</Menu.Item>
-            <Menu.Item
-                active={sortProduct === 'manufacturer'}
-                onClick={setSort.bind(this, 'manufacturer')}
-            >Manufacturer</Menu.Item>
-            <Menu.Item>
-                <Input icon='search' placeholder='search' value={searchText} onChange={e => setSearchText(e.target.value)} />
-            </Menu.Item>
-
-        </Menu>
+        <div>
+            <div className='navbar'>
+                <CatalogMenu />
+                <div className='productSort'>
+                    <h3>Sort</h3>
+                    <MenuFilter />
+                </div>
+                <div className='advertising'>
+                    <ChangeAdvertising />
+                    <PromoContainer />
+                </div>
+            </div>
+        </div>
     )
 };
 
-export default MenuFilter;
+export default Navbar;
